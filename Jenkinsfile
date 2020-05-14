@@ -6,6 +6,6 @@ node{
   {
     def mvn = tool (name: 'maven1', type: 'maven') + '/bin/mvn'
    // def mvnHome = tool name: 'maven1', type: 'maven'
-    sh"${mvn}"
+    sh"tool (name: 'maven1', type: 'maven') + '/bin/mvn'"
   }  
 }
